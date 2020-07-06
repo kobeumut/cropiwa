@@ -5,21 +5,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="6">
 
         <include layout="@layout/toolbar" />
 
-        <com.steelkiwi.cropiwa.CropIwaView
+        <com.kotlinify.cropiwa.CropIwaView
             android:id="@+id/crop_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             app:ci_dynamic_aspect_ratio="false" />
 
-    </android.support.design.widget.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <com.yarolegovich.mp.MaterialPreferenceScreen
         android:id="@+id/crop_preference_screen"
